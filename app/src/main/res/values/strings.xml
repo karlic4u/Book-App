@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Tryout</string>
+    <string name="empty_list_message">No books available for purchase at this moment</string>
+</resources>

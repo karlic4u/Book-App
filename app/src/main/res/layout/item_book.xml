@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    >
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:id="@+id/book_image_view"
+        tools:background="@color/colorPrimary"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/TextStyle"
+        android:id="@+id/title_text_view"
+        tools:layout_editor_absoluteY="50dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:text="Harry Potter"
+        app:layout_constraintStart_toEndOf="@+id/book_image_view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/TextStyle"
+        android:id="@+id/author_text_view"
+        tools:text="Obuleye"
+        android:gravity="bottom"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/book_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/title_text_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        />
+
+</android.support.constraint.ConstraintLayout>
